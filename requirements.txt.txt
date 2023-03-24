@@ -1,0 +1,5 @@
+1. Jupyter notebook
+
+2. Python Libraries- pandas, sklearn, numpy, matplotlib, skmetrics, pmdarima
+
+3. Visual Code Studio

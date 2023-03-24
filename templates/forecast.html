@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Breast Cancer Dashboard</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center h-screen bg-gradient-to-t from-black via-purple-900 to-violet-600">
+        <div class=" md:w-auto w-[90%] p-8 rounded-xl  m-4 flex flex-col items-center shadow-lg border border-gray-400 opacity-90 ">
+            <form action = '/prediction' method = 'POST'>
+            <div class="text-xl cursor-pointer flex flex-col justify-center items-center mt-5 md:mt-0 ">
+                <img src="static/future_pred.png" alt="future_pred" style="width:30%" >
+                <h1 class="font-semibold text-3xl text-gray-200 m-2">Patient Visits Forecasting</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-10 md:mt-4 space-y-6 md:space-y-8">
+                <div class="">
+                    <div class="m-1 text-lg text-gray-200 text-semibold" >Enter the Date</div>
+                    <input type="text" 
+                        class="border-b border-gray-200 focus:outline-none  text-gray-200 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px] bg-transparent">
+                </div>
+            </div>
+            <div class="text-center mt-7">
+                <button type = "submit"
+                    class="uppercase px-24 md:px-[118px] lg:px-[140px] py-2 rounded-md text-white bg-gradient-to-t from-stone-900 via-purple-900 to-violet-600  font-medium ">Predict</button>
+            </div>
+            <div class="text-center mt-7">
+                <button
+                    class="uppercase px-24 md:px-[118px] lg:px-[140px] py-2 rounded-md text-white bg-gradient-to-t from-stone-900 via-purple-900 to-violet-600  font-medium "><a href="/">Home </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
